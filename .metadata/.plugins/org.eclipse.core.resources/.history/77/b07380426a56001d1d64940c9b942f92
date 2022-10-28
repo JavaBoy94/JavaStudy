@@ -1,0 +1,21 @@
+package org.java.variableex;
+
+public class Varex01 {
+
+		public static void main(String[] args) {
+			// 변수
+			/*
+			 * 1. 변수선언
+			 * 2. 변수를 초기화 > 데이터를 추가
+			 * 3. 변수를 메모리에 할당
+			 *
+			 */
+
+			// 정수형
+			byte b;    // byte 타입의 변수 b를 선언
+			b = 10;    // 변수 b를 정수형 데이터 10으로 '초기화' >> 메모리 주소에 할당
+		
+			String a = "hi";
+			System.out.println(a);
+		}
+}

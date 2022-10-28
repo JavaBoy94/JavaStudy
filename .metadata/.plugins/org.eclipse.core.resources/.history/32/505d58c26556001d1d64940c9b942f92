@@ -1,0 +1,17 @@
+package org.java.variableex;
+
+public class Varex01 {
+
+		public static void main(String[] args) {
+			// 변수예제
+			/*
+			 * 1. asdasdasd
+			 * 2. sadkjsdfkljsa
+			 * 3. 낭러ㅜ미
+			 *
+			 */
+			
+			String a = "hi"
+			System.out.println(a);
+		}
+}
