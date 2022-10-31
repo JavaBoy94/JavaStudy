@@ -8,7 +8,7 @@ public class Castingex {
 		int i = 10;
 		double d = 1.1;
 		
-//		int i2 = i+d;     // duble 타입의 d가 int 변수에 못들어감
+//		int i2 = i+d;     // double 타입의 d가 int 변수에 못들어감
 		double i2 = i+d;  // double 타입의 변수로 변경
 		double d2 = 20+1.5;
 		
@@ -33,6 +33,10 @@ public class Castingex {
 		byte b5 = 20;
 		byte b6 = (byte)(b4+b5);  // b4+b5 를 먼저 계산 후에 byte로 강제변환
 		System.out.println(b6);   // 30으로 출력
+		
+		
+		// int num1 = 10+12.5;
+		// System.out.println(num1);
 		
 		
 	}
