@@ -1,8 +1,0 @@
-package org.java.variableex;
-
-public class Varex01 {
-
-		public static void main(String[] args) {
-			
-		}
-}
