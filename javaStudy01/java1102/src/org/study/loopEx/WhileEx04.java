@@ -35,5 +35,6 @@ public class WhileEx04 {
 		} else {
 			System.out.println("시작단이 끝단보다 작아야 합니다 !");
 		}
+	
 	}
 }
