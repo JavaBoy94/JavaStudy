@@ -25,7 +25,7 @@ public class ArrayEx02 {
 		
 		System.out.println();
 		
-		// foreach문
+		// foreach문  => 특정 배열의 자료전체를 하나의 변수에 저장
 		int[] arr3 = {1,2,3,4,5};
 		for (int i:arr3) {
 			System.out.print(i);
