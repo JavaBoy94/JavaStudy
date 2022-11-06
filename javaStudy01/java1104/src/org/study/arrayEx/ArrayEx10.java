@@ -9,7 +9,7 @@ public class ArrayEx10 {
 		System.out.println("==다차원 배열==");
 
 		int[][] score = {
-			//   국어     영어   수학
+			//   국어     영어   수학  !
 				{100, 67, 77},
 				{88, 66, 88},
 				{80, 46, 97},
