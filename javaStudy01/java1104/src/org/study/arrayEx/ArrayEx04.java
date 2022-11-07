@@ -33,5 +33,6 @@ public class ArrayEx04 {
 		for (int i=0; i<5; i++) {
 			System.out.print(arr[i]);        // 8. 무작위로 5번 뽑아 출력
 		}
+		
 	}
 }
