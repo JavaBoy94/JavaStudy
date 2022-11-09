@@ -26,6 +26,8 @@ public class ArrayEx09 {
 			System.out.println();           // 한 행이 끝나면 줄바꿈 
 		}
 		
+		
+		
 
 		
 		

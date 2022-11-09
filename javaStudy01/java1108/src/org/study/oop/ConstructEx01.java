@@ -9,7 +9,7 @@ public class ConstructEx01 {
 	
 	// 컴파일러가 자동으로 기본생성자를 생성 (클래스명과 동일), return값이 생략되어있으므로 반환타입은 void지만 선언은 하지않음
 	public ConstructEx01() {
-		this("s111");            // 메소드 오버로딩1을 호출. 다른 생성자를 호출할땐 this를 통해 첫째 줄에서 호출해야함
+//		this("s111");            // 메소드 오버로딩1을 호출. 다른 생성자를 호출할땐 this를 통해 첫째 줄에서 호출해야함
 		System.out.println("기본생성자");
 	}
 	
