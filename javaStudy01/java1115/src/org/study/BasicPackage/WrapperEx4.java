@@ -13,6 +13,7 @@ public class WrapperEx4 {
 		Integer i4 = 10;
 		int i5 = i4;
 		int i6 = new Integer(100);
+		System.out.println(i6-10);
 		System.out.println(i4.toString());
 		
 		Integer i7 = new Integer("111");
