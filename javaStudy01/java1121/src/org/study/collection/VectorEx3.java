@@ -45,7 +45,7 @@ public class VectorEx3 {
 		
 		System.out.println();
 		
-		// foreach문으로 벡터요소 출력
+		// foreach문으로 벡터요소 출력 => 순서를 정하지 않아도 0번 인덱스부터 실행
 		for (MemberDto users : Dto) {
 			System.out.print("아이디 : "+users.getUserId());  
 			System.out.print(" 비밀번호 : "+users.getUserPw());  

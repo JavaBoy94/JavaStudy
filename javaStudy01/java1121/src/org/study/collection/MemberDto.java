@@ -48,7 +48,7 @@ public class MemberDto {
 	}
 	
 //	@Override
-//	public String toString() {
+//	public String toString() {   // toString => 자동호출되는 메소드!
 //		String user = "아이디 : "+userId+", 비밀번호 : "+userPw+", 이름 : "+userName+", 나이 : "+age;
 //		return user;
 //	}
