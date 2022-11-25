@@ -19,7 +19,7 @@ public class FileReaderEx1 {
 		try {
 			// 파일을 읽을 입력객체 생성
 			fReader = new FileReader(f1);
-			int inData;
+			int inData;  // read()의 반환타입이 int이므로 그걸 담을 변수 타입도 int
 			// 입력받은 내용을 한글자씩 출력
 			while ((inData=fReader.read())!=-1) { 
 				System.out.print((char)inData);
