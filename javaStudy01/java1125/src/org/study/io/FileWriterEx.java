@@ -17,8 +17,8 @@ public class FileWriterEx {
 		// 2. 생성될 파일의 경로 설정
 		String fileUrl = "E:\\ioex\\ioex2\\test4.txt";
 		
-		// 3. 출력할 파일 객체 생성 => FileWriter
-		FileWriter fWriter = null;
+		// 3. 출력할 파일 객체 생성 => FileWriter   >> try 밖에서 마지막에 종료(.close())해야하므로 별도 객체 생성
+		FileWriter fWriter = null; 
 		
 		try {
 			// 4. 해당 경로에 파일 출력(생성) (예외처리 : IOException)

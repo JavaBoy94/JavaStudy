@@ -1,6 +1,7 @@
 package org.study.io;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -26,7 +27,7 @@ public class Test1125 {
 		
 		// Set => 순서가 없는 데이터들의 집합 (주머니) => 데이터 중복 불가능. 
 		// 인덱스가 없기때문에 for문 사용불가 => 요소 하나씩 순회하여 출력하려면 Iterator를 사용한다.
-		Set<Integer> set = new HashSet<>();
+		Set<Integer> set = new HashSet<>();   // => 고유값(Hash코드)순으로 정렬됨
 		set.add(10);
 		set.add(20);
 		set.add(30);
@@ -34,8 +35,15 @@ public class Test1125 {
 		set.add(50);
 		System.out.println(set);
 		
+		
+		List<Integer> ar = new ArrayList<Integer>(set);
+		Collections.sort(ar);
+		System.out.println(ar);
+//		Collections.sort(ar, Collections.reverseOrder());
+//		System.out.println(ar);
+		
 		// Iterator 사용
-		Iterator<Integer> iter = set.iterator();
+		Iterator<Integer> iter = ar.iterator();
 		while (iter.hasNext()) {
 			System.out.println(iter.next());
 		}
@@ -56,8 +64,9 @@ public class Test1125 {
 		System.out.println(map.get(4));
 		System.out.println(map.get(5));
 		
-		// map 출력 => keyset 생성 후 iterator로 키:값 출력
+		// map 출력 => keyset 생성 후 iterator로 '키:값'형태 출력
 		Set<Integer> ks = map.keySet();
+		
 		Iterator<Integer> iter2 = ks.iterator();
 		System.out.print("{"+" ");
 		while (iter2.hasNext()) {
