@@ -11,10 +11,10 @@ public class SwingEx1 extends JFrame {
 		setTitle("SwingEx1 타이틀");
 		// 사이즈 설정
 		setSize(400, 200);
-		// 노출여부 설정
-		setVisible(true);
 		// 색(배경색) 설정
 		setBackground(Color.GREEN);
+		// 노출여부 설정
+		setVisible(true);
 	}
 	
 	public static void main(String[] args) {

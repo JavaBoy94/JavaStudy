@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 
 public class SwingEx2 extends JFrame {
 	
-	public SwingEx2() {
+	public SwingEx2() {   // 기본생성자 설정 => 해당 객체생성시 자동으로 프레임(창)이 설정되고 실행
 	
 		setTitle("SwingEx2 타이틀");
 		setSize(1280, 600);

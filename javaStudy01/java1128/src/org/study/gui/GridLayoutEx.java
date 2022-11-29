@@ -13,7 +13,7 @@ public class GridLayoutEx extends JFrame {
 		
 		// 그리드 배치관리자 객체 생성 (4X2)
 		GridLayout grid = new GridLayout(4, 2);  //4행 2열
-		// 그리드 사이 간격 설정
+		// 그리드 사이 수직(세로)간격 설정
 		grid.setVgap(5);
 		setLayout(grid);   // grid를 기본 배치관리자로 설정
 	

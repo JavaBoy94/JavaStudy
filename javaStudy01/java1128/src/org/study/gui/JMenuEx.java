@@ -16,7 +16,7 @@ public class JMenuEx extends JFrame {
 
 		// 메뉴바 생성 (JMenu)
 		JMenuBar menuBar = new JMenuBar();
-		// 메뉴바 적용
+		// 프레임의 메뉴바 설정
 		setJMenuBar(menuBar);
 		
 		// 메뉴 1. 파일 ------------------------------

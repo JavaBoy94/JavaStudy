@@ -26,7 +26,7 @@ public class JDialogEx extends JFrame implements ActionListener{
 		jmb = new JMenuBar();
 		jm = new JMenu("메뉴");
 		jmi1 = new JMenuItem("메뉴1");
-		jmi2 = new JMenuItem("메뉴2");
+		jmi2 = new JMenuItem("메뉴2");	
 		btn = new Button("BUTTON");
 		
 		jm.add(jmi1);
@@ -38,11 +38,12 @@ public class JDialogEx extends JFrame implements ActionListener{
 		this.setVisible(true);
 		
 		// jmi1에 액션이벤트 추가
-		jmi1.addActionListener(this);
+		jmi1.addActionListener(this);   // addActionListener에 맞는 this는 JFrame이 아닌 ActionListener
 	}
 	
-	
-	@Override    // 액션이벤트 설정
+
+	// this 먼저 호출 한 다음 this의 메소드 구현  => Android 이벤트 구현방법 중 하나
+	@Override    // 액션이벤트 구현 (다이얼로그 띄우기)
 	public void actionPerformed(ActionEvent e) {
 		// 다이얼로그 생성
 		JDialog dial = new JDialog(this, "다이얼로그");  // this => 다이얼로그 오너(JDialogEx)
@@ -55,7 +56,8 @@ public class JDialogEx extends JFrame implements ActionListener{
 		// 다이얼로그에 버튼 추가
 		dial.add(btn);
 		
-		// 버튼에 액션이벤트 추가
+		// 버튼에 액션이벤트 추가 (다이얼로그 닫기) => 익명객체 생성
+
 		btn.addActionListener(new ActionListener() {
 			
 			@Override    // 버튼에 대한 액션이벤트 설정
@@ -63,7 +65,6 @@ public class JDialogEx extends JFrame implements ActionListener{
 				dial.setVisible(false);  // 버튼 클릭시 다이얼로그를 없애는 액션이벤트
 			}
 		});
-		
 		
 	}
 	
