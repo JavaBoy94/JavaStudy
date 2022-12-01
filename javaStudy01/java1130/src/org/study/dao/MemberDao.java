@@ -11,7 +11,7 @@ public class MemberDao {
 	public MemberDao() {
 		System.out.println("Dao");
 	}
-
+	// insert 메소드 설정
 	public int insert(String userId, String userPw, int age) {
 		System.out.print("아이디 : "+userId);
 		System.out.print(", 비밀번호  : "+userPw);
